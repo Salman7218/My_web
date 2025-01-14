@@ -140,32 +140,35 @@
                 </div>
             </div>
         </div>
+
         <div class="row g-5">
             <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="post">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <input type="text" class="form-control border-0 bg-light px-4" placeholder="First Name" style="height: 55px;" required>
+                            <input type="hidden" name="access_key" value="b6f003e1-ab16-4b75-8a89-d8dbe7b2469f">
+                            <input type="text" name="first_name" class="form-control border-0 bg-light px-4" placeholder="First Name" style="height: 55px;" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control border-0 bg-light px-4" placeholder="Last Name" style="height: 55px;" required>
+                            <input type="text" name="last_name" class="form-control border-0 bg-light px-4" placeholder="Last Name" style="height: 55px;" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control border-0 bg-light px-4" placeholder="Company Name" style="height: 55px;" required>
+                            <input type="text" name="company_name" class="form-control border-0 bg-light px-4" placeholder="Company Name" style="height: 55px;" required>
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control border-0 bg-light px-4" placeholder="Company Email ID" style="height: 55px;" required>
+                            <input type="email" name="email_id" class="form-control border-0 bg-light px-4" placeholder="Company Email ID" style="height: 55px;" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control border-0 bg-light px-4" placeholder="Contact Number" style="height: 55px;" required>
+                            <input type="text" name="contact_no" class="form-control border-0 bg-light px-4" placeholder="Contact Number" style="height: 55px;" required>
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control border-0 bg-light px-4" placeholder="Company URL" style="height: 55px;">
+                            <input type="text" name="company_url" class="form-control border-0 bg-light px-4" placeholder="Company URL" style="height: 55px;">
                         </div>
                         <div class="col-12">
-                            <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Tell us more about your query" required></textarea>
+                            <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Tell us more about your query" required></textarea>
                         </div>
                         <div class="col-12">
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
                             <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                         </div>
                     </div>
